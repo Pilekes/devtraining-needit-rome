@@ -482,8 +482,8 @@
       },
       "overrides" : {
         "composition" : [ {
-          "elementId" : "list__simple_1",
-          "elementLabel" : "List - Simple 1",
+          "elementId" : "all_active_needits_list",
+          "elementLabel" : "All Active NeedIts List",
           "propertyValues" : {
             "listTitle" : {
               "type" : "TRANSLATION_LITERAL",
@@ -721,9 +721,91 @@
             }
           },
           "eventMappings" : [ ],
-          "slot" : "Main",
+          "slot" : "Row 2",
           "definition" : {
             "id" : "2b1c080881e05dc63b917044290b233f",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : { }
+        }, {
+          "elementId" : "needit_app_cards",
+          "elementLabel" : "NeedIt App Cards",
+          "propertyValues" : {
+            "title" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "My NeedIt Application Records",
+                "comment" : ""
+              }
+            },
+            "titleHeadingLevel" : {
+              "type" : "JSON_LITERAL",
+              "value" : "1"
+            },
+            "titleStyleVariant" : {
+              "type" : "JSON_LITERAL",
+              "value" : "header-tertiary"
+            },
+            "data" : {
+              "type" : "DATA_OUTPUT_BINDING",
+              "binding" : {
+                "address" : [ "my_needit_app_rec_evam_dr", "compositeDataViews" ]
+              }
+            },
+            "toggleView" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "defaultView" : {
+              "type" : "JSON_LITERAL",
+              "value" : "grid"
+            },
+            "cardHeight" : {
+              "type" : "JSON_LITERAL",
+              "value" : "md"
+            },
+            "maxCardsPerRow" : {
+              "type" : "JSON_LITERAL",
+              "value" : "4"
+            },
+            "minCardWidth" : {
+              "type" : "JSON_LITERAL",
+              "value" : 150
+            },
+            "dataBrokerIsLoading" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "emptyMessage" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "No content to display",
+                "comment" : ""
+              }
+            },
+            "hideFilter" : {
+              "type" : "JSON_LITERAL",
+              "value" : true
+            },
+            "hidePaginationControls" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "daClientActionContract" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            }
+          },
+          "eventMappings" : [ ],
+          "slot" : "Row 1",
+          "definition" : {
+            "id" : "dec0b89ec87f44e66126f8cc78e53891",
             "type" : "MACROPONENT"
           },
           "overrides" : null,
@@ -737,13 +819,14 @@
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Main","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+            "items" : [{"slotName":"Row 1","rules":{"flex":"1","margin-bottom":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Row 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
             "root" : null,
-            "rules" : {"flex-flow":"row nowrap","align-items":"stretch","height":"100%"},
+            "rules" : {"flex-flow":"column nowrap","align-items":"stretch","height":"100%"},
             "styles" : null,
-            "templateId" : "5832fd4d53c31010e6bcddeeff7b12db",
+            "templateId" : "f348f94153071010e6bcddeeff7b12dd",
             "type" : "flex"
-          }
+          },
+          "version" : "2.0.0"
         }
       },
       "isHidden" : {
@@ -777,7 +860,38 @@
   }
 } ]</composition>
         <da_relay_models/>
-        <data>[ ]</data>
+        <data>[ {
+  "definition" : {
+    "id" : "e6af35d9dbb810106b3982c9689619e5",
+    "type" : "COMPOSITE"
+  },
+  "elementId" : "my_needit_app_rec_evam_dr",
+  "elementLabel" : "My NeedIt App Records EVAM DR",
+  "eventMappings" : [ ],
+  "inputValues" : {
+    "evamDefinitionId" : {
+      "type" : "JSON_LITERAL",
+      "value" : "026bf3f307a501100687fa4d7c1ed026"
+    },
+    "pageCursor" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    },
+    "pageSize" : {
+      "type" : "JSON_LITERAL",
+      "value" : "9"
+    },
+    "pageNumber" : {
+      "type" : "JSON_LITERAL",
+      "value" : "0"
+    },
+    "filterPreference" : {
+      "type" : "JSON_LITERAL",
+      "value" : ""
+    }
+  },
+  "readEvaluationMode" : "EAGER"
+} ]</data>
         <dispatched_events/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <handled_events/>
@@ -805,10 +919,16 @@
   "message" : "All Active NeedIts",
   "comment" : ""
 }, {
+  "message" : "My NeedIt Application Records",
+  "comment" : ""
+}, {
   "message" : "NeedIt Logo",
   "comment" : ""
 }, {
   "message" : "NeedIts Needed This Month",
+  "comment" : ""
+}, {
+  "message" : "No content to display",
   "comment" : ""
 }, {
   "message" : "Overdue NeedIts",
@@ -826,13 +946,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-08-17 15:27:25</sys_created_on>
         <sys_id>b476f9111bc2301068dd5464604bcb91</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_ux_macroponent_b476f9111bc2301068dd5464604bcb91</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-08-17 19:40:23</sys_updated_on>
+        <sys_updated_on>2022-02-15 20:40:57</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

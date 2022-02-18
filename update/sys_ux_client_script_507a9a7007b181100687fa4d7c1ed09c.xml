@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Home">223f9e631b46f41068dd5464604bcb2a</macroponent>
+        <name>Refresh NeedIts list</name>
+        <required_translations>[ ]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    console.log("1: L14");
+
+    const timeoutId = helpers.timing.setTimeout(() => {
+        console.log("2: L17");
+        api.setState('listRefreshed', Date.now());
+        console.log("3: L19");
+  }, 0.5 * 60 * 1000);
+    
+    if (api.state.timeOutCounter == 0) {
+        console.log("4: L23");
+        api.setState('timeOutCounter', 1);
+        api.setState('listRefreshed', Date.now());
+        console.log("5: L26");
+    }
+
+    console.log("6: L29");
+
+
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-18 14:43:09</sys_created_on>
+        <sys_id>507a9a7007b181100687fa4d7c1ed09c</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Refresh NeedIts list</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ux_client_script_507a9a7007b181100687fa4d7c1ed09c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-18 17:02:02</sys_updated_on>
+    </sys_ux_client_script>
+</record_update>

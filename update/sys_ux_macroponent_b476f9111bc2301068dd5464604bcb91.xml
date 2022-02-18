@@ -333,6 +333,88 @@
           "isNonDestructive" : false,
           "styles" : { }
         }, {
+          "elementId" : "button_2",
+          "elementLabel" : "Button 2",
+          "propertyValues" : {
+            "variant" : {
+              "type" : "JSON_LITERAL",
+              "value" : "secondary"
+            },
+            "size" : {
+              "type" : "JSON_LITERAL",
+              "value" : "md"
+            },
+            "label" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Show all NeedIts",
+                "comment" : ""
+              }
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "disabled" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "tooltipContent" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Enter a label",
+                "comment" : ""
+              }
+            },
+            "configAria" : {
+              "type" : "MAP_CONTAINER",
+              "container" : { }
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "ckzsaffccddxaaaabbwddjjhhveeiimexjjzb",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_58872_needit.FILTER_NEEDIT",
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : {
+                    "state" : null
+                  }
+                },
+                "sysId" : "fd00a57407fd41100687fa4d7c1ed07b"
+              },
+              "operation" : null,
+              "targetId" : "ckzsaffccddxaaaabbxddjjhhvhhbbggsoaauz",
+              "type" : "EVENT"
+            } ]
+          } ],
+          "slot" : "Column 2",
+          "definition" : {
+            "id" : "d37ce8abca89d02905fed903c8e34d8e",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : { }
+        }, {
           "elementId" : "data_visualization_3",
           "elementLabel" : "Data visualization 3",
           "propertyValues" : {
@@ -482,6 +564,170 @@
       },
       "overrides" : {
         "composition" : [ {
+          "elementId" : "btn_show_req",
+          "elementLabel" : "Button show requested",
+          "propertyValues" : {
+            "variant" : {
+              "type" : "JSON_LITERAL",
+              "value" : "secondary"
+            },
+            "size" : {
+              "type" : "JSON_LITERAL",
+              "value" : "md"
+            },
+            "label" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Show requested NeedIts",
+                "comment" : ""
+              }
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "disabled" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "tooltipContent" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Enter a label",
+                "comment" : ""
+              }
+            },
+            "configAria" : {
+              "type" : "MAP_CONTAINER",
+              "container" : { }
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "ckzscqwhhggaaaaccrddjjhhviibhhfggjup",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_58872_needit.FILTER_NEEDIT",
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : {
+                    "state" : "13"
+                  }
+                },
+                "sysId" : "fd00a57407fd41100687fa4d7c1ed07b"
+              },
+              "operation" : null,
+              "targetId" : "ckzscqwhhggaaaaccsddjjhhvmwggkjjdih",
+              "type" : "EVENT"
+            } ]
+          } ],
+          "slot" : "Row 1",
+          "definition" : {
+            "id" : "d37ce8abca89d02905fed903c8e34d8e",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : { }
+        }, {
+          "elementId" : "btn_show_all",
+          "elementLabel" : "Button show all",
+          "propertyValues" : {
+            "variant" : {
+              "type" : "JSON_LITERAL",
+              "value" : "secondary"
+            },
+            "size" : {
+              "type" : "JSON_LITERAL",
+              "value" : "md"
+            },
+            "label" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Show all NeedIts",
+                "comment" : ""
+              }
+            },
+            "icon" : {
+              "type" : "JSON_LITERAL",
+              "value" : null
+            },
+            "disabled" : {
+              "type" : "JSON_LITERAL",
+              "value" : false
+            },
+            "tooltipContent" : {
+              "type" : "TRANSLATION_LITERAL",
+              "value" : {
+                "message" : "Enter a label",
+                "comment" : ""
+              }
+            },
+            "configAria" : {
+              "type" : "MAP_CONTAINER",
+              "container" : { }
+            }
+          },
+          "eventMappings" : [ {
+            "eventMappingId" : "ckzscrcmlaaaaddaaddjjhhvgsuxppkj",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_button.NOW_BUTTON#CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_button.NOW_BUTTON#CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_58872_needit.FILTER_NEEDIT",
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : {
+                    "state" : null
+                  }
+                },
+                "sysId" : "fd00a57407fd41100687fa4d7c1ed07b"
+              },
+              "operation" : null,
+              "targetId" : "ckzscrcmlaaaaddbbddjjhhvejaavthbbt",
+              "type" : "EVENT"
+            } ]
+          } ],
+          "slot" : "Row 1",
+          "definition" : {
+            "id" : "d37ce8abca89d02905fed903c8e34d8e",
+            "type" : "MACROPONENT"
+          },
+          "overrides" : null,
+          "isHidden" : {
+            "type" : "JSON_LITERAL",
+            "value" : ""
+          },
+          "isNonDestructive" : false,
+          "styles" : { }
+        }, {
           "elementId" : "all_active_needits_list",
           "elementLabel" : "All Active NeedIts List",
           "propertyValues" : {
@@ -497,22 +743,9 @@
               "value" : "x_58872_needit_needit"
             },
             "query" : {
-              "type" : "CLIENT_TRANSFORM",
-              "transform" : {
-                "operands" : {
-                  "type" : "LIST_CONTAINER",
-                  "container" : [ {
-                    "type" : "JSON_LITERAL",
-                    "value" : "active="
-                  }, {
-                    "type" : "JSON_LITERAL",
-                    "value" : "true"
-                  }, {
-                    "type" : "JSON_LITERAL",
-                    "value" : ""
-                  } ]
-                },
-                "operator" : "CONCAT"
+              "type" : "STATE_BINDING",
+              "binding" : {
+                "address" : [ "NeeditFilter" ]
               }
             },
             "columns" : {
@@ -733,93 +966,11 @@
           },
           "isNonDestructive" : false,
           "styles" : { }
-        }, {
-          "elementId" : "needit_app_cards",
-          "elementLabel" : "NeedIt App Cards",
-          "propertyValues" : {
-            "title" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "message" : "My NeedIt Application Records",
-                "comment" : ""
-              }
-            },
-            "titleHeadingLevel" : {
-              "type" : "JSON_LITERAL",
-              "value" : "1"
-            },
-            "titleStyleVariant" : {
-              "type" : "JSON_LITERAL",
-              "value" : "header-tertiary"
-            },
-            "data" : {
-              "type" : "DATA_OUTPUT_BINDING",
-              "binding" : {
-                "address" : [ "my_needit_app_rec_evam_dr", "compositeDataViews" ]
-              }
-            },
-            "toggleView" : {
-              "type" : "JSON_LITERAL",
-              "value" : true
-            },
-            "defaultView" : {
-              "type" : "JSON_LITERAL",
-              "value" : "grid"
-            },
-            "cardHeight" : {
-              "type" : "JSON_LITERAL",
-              "value" : "md"
-            },
-            "maxCardsPerRow" : {
-              "type" : "JSON_LITERAL",
-              "value" : "4"
-            },
-            "minCardWidth" : {
-              "type" : "JSON_LITERAL",
-              "value" : 150
-            },
-            "dataBrokerIsLoading" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "emptyMessage" : {
-              "type" : "TRANSLATION_LITERAL",
-              "value" : {
-                "message" : "No content to display",
-                "comment" : ""
-              }
-            },
-            "hideFilter" : {
-              "type" : "JSON_LITERAL",
-              "value" : true
-            },
-            "hidePaginationControls" : {
-              "type" : "JSON_LITERAL",
-              "value" : false
-            },
-            "daClientActionContract" : {
-              "type" : "JSON_LITERAL",
-              "value" : null
-            }
-          },
-          "eventMappings" : [ ],
-          "slot" : "Row 1",
-          "definition" : {
-            "id" : "dec0b89ec87f44e66126f8cc78e53891",
-            "type" : "MACROPONENT"
-          },
-          "overrides" : null,
-          "isHidden" : {
-            "type" : "JSON_LITERAL",
-            "value" : ""
-          },
-          "isNonDestructive" : false,
-          "styles" : { }
         } ],
         "layout" : {
           "default" : {
             "children" : null,
-            "items" : [{"slotName":"Row 1","rules":{"flex":"1","margin-bottom":"1rem"},"styles":{"display":"flex","flex-direction":"column"}},{"slotName":"Row 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
+            "items" : [{"slotName":"Row 1","rules":{"flex":"1","margin-bottom":"1rem"},"styles":{"display":"flex","flex-direction":"row","justify-content":"space-between"}},{"slotName":"Row 2","rules":{"flex":"1"},"styles":{"display":"flex","flex-direction":"column"}}],
             "root" : null,
             "rules" : {"flex-flow":"column nowrap","align-items":"stretch","height":"100%"},
             "styles" : null,
@@ -860,44 +1011,47 @@
   }
 } ]</composition>
         <da_relay_models/>
-        <data>[ {
-  "definition" : {
-    "id" : "e6af35d9dbb810106b3982c9689619e5",
-    "type" : "COMPOSITE"
-  },
-  "elementId" : "my_needit_app_rec_evam_dr",
-  "elementLabel" : "My NeedIt App Records EVAM DR",
-  "eventMappings" : [ ],
-  "inputValues" : {
-    "evamDefinitionId" : {
-      "type" : "JSON_LITERAL",
-      "value" : "026bf3f307a501100687fa4d7c1ed026"
-    },
-    "pageCursor" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    },
-    "pageSize" : {
-      "type" : "JSON_LITERAL",
-      "value" : "9"
-    },
-    "pageNumber" : {
-      "type" : "JSON_LITERAL",
-      "value" : "0"
-    },
-    "filterPreference" : {
-      "type" : "JSON_LITERAL",
-      "value" : ""
-    }
-  },
-  "readEvaluationMode" : "EAGER"
-} ]</data>
+        <data>[ ]</data>
         <dispatched_events/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
-        <handled_events/>
+        <handled_events>fd00a57407fd41100687fa4d7c1ed07b</handled_events>
         <interactions/>
         <interfaces/>
-        <internal_event_mappings>{ }</internal_event_mappings>
+        <internal_event_mappings>{
+  "x_58872_needit.FILTER_NEEDIT" : [ {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : "x_58872_needit.FILTER_NEEDIT",
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : {
+          "state" : null
+        }
+      },
+      "sysId" : "fd00a57407fd41100687fa4d7c1ed07b"
+    },
+    "operation" : null,
+    "targetId" : "ckzsaaaskbaaaabbfddjjhhvwggwepjjzm",
+    "type" : "EVENT"
+  }, {
+    "broker" : null,
+    "clientScript" : null,
+    "declarativeAction" : null,
+    "event" : {
+      "apiName" : null,
+      "payload" : {
+        "type" : "JSON_LITERAL",
+        "value" : { }
+      },
+      "sysId" : null
+    },
+    "operation" : null,
+    "targetId" : "ckzscqaawccaaaaccqddjjhhvhhaahtahhsn",
+    "type" : "EVENT"
+  } ]
+}</internal_event_mappings>
         <layout>{
   "default" : {
     "children" : null,
@@ -919,7 +1073,7 @@
   "message" : "All Active NeedIts",
   "comment" : ""
 }, {
-  "message" : "My NeedIt Application Records",
+  "message" : "Enter a label",
   "comment" : ""
 }, {
   "message" : "NeedIt Logo",
@@ -928,10 +1082,13 @@
   "message" : "NeedIts Needed This Month",
   "comment" : ""
 }, {
-  "message" : "No content to display",
+  "message" : "Overdue NeedIts",
   "comment" : ""
 }, {
-  "message" : "Overdue NeedIts",
+  "message" : "Show all NeedIts",
+  "comment" : ""
+}, {
+  "message" : "Show requested NeedIts",
   "comment" : ""
 }, {
   "message" : "The NeedIt Experience",
@@ -941,18 +1098,29 @@
         <root_component_config>{ }</root_component_config>
         <root_component_definition/>
         <schema_version>1.0.0</schema_version>
-        <state_properties>[ ]</state_properties>
+        <state_properties>[ {
+  "name" : "needit_filter",
+  "label" : "needit_filter",
+  "fieldType" : "",
+  "valueType" : "",
+  "shape" : "",
+  "description" : "",
+  "initialValue" : {
+    "type" : "JSON_LITERAL",
+    "value" : "active=true^state=13"
+  }
+} ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-08-17 15:27:25</sys_created_on>
         <sys_id>b476f9111bc2301068dd5464604bcb91</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_ux_macroponent_b476f9111bc2301068dd5464604bcb91</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-15 20:40:57</sys_updated_on>
+        <sys_updated_on>2022-02-18 11:52:34</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field">
+    <sys_db_view_table_field action="INSERT_OR_UPDATE">
+        <field>metric</field>
+        <sys_class_name>sys_db_view_table_field</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-04-20 13:17:50</sys_created_on>
+        <sys_id>76df006007c301100687fa4d7c1ed054</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>metric</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_db_view_table_field_76df006007c301100687fa4d7c1ed054</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-04-20 13:17:50</sys_updated_on>
+        <table>asmt_assessment_instance_question</table>
+        <view_table display_value="asmt_assessment_instance_question">0daf082007c301100687fa4d7c1ed0d5</view_table>
+    </sys_db_view_table_field>
+</record_update>
